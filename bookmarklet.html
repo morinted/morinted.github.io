@@ -1,0 +1,7 @@
+<html>
+<head></head>
+<body>
+  <p>
+    Please drag this link to your bookmarks: <a href="javascript:function%20extendNodeList()%7Bfunction%20b(a)%7B%22length%22!%3D%3Da%26%26(NodeList.prototype%5Ba%5D%3DArray.prototype%5Ba%5D)%7Dvar%20a%3DObject.getOwnPropertyNames(Array.prototype)%3Ba.forEach(b)%7Dfunction%20rowPrice(a)%7Bvar%20b%3Breturn%20b%3Da.cells%26%26a.cells%5BPRICE_INDEX%5D%3FparseFloat(a.cells%5BPRICE_INDEX%5D.innerText)%3A-1%7Dfunction%20processRows()%7Bunchecked%3D!1%2CminLast%3E0%26%26lastRows.forEach(function(a)%7Bunchecked%7C%7CrowPrice(a)!%3D%3DminLast%3Fa.cells%26%26a.cells%5BSELECT_INDEX%5D%26%26a.cells%5BSELECT_INDEX%5D.children%26%26(a.cells%5BSELECT_INDEX%5D.children%5B0%5D.checked%3D!0)%3Aunchecked%3D!0%7D)%2CminLast%3D-1%2ClastRows%3D%5B%5D%7Dvar%20PRICE_INDEX%3D6%2CSELECT_INDEX%3D10%2Crows%3Ddocument.querySelectorAll(%22%23panel-products-list%20%3E%20table%20%3E%20tbody%20%3E%20tr%20%3E%20td%20%3E%20table%20%3E%20tbody%20%3E%20tr%22)%2ClastRows%3D%5B%5D%2CminLast%3D-1%2Cprice%3D-1%2Cunchecked%3D!1%3BextendNodeList()%2Crows.forEach(function(a)%7B%22cluster-header%22%3D%3D%3Da.className%3FprocessRows()%3A(lastRows.push(a)%2Cprice%3DrowPrice(a)%2C(-1!%3D%3Dprice%26%26minLast%3Eprice%7C%7C-1%3D%3D%3DminLast)%26%26(minLast%3Dprice))%7D)%2CprocessRows()%3B">Select Expensive Duplicates</a>
+  </p>
+</body>
